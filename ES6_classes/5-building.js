@@ -26,8 +26,4 @@ export default class Building {
     this._sqft = sqft;
   }
 
-  evacuationWarningMessage() {
-    throw new Error("evacuationWarningMessage is not yet implemented");
-  }
-
 }
