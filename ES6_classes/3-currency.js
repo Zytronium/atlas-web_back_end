@@ -40,4 +40,11 @@ export default class Currency {
     }
     this._name = name;
   }
+
+  // methods
+
+  // Displays the currency name and code. (i.e. "Dollars ($)")
+  displayFullCurrency() {
+    return `${this._name} (${this._code})`;
+  }
 }
