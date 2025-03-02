@@ -19,7 +19,7 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​5. The wonders of spread syntax
 - [X] ​6. Take advantage of template literals
 - [X] ​7. Object property value shorthand syntax
-- [ ] ​8. No need to create empty objects before adding in properties
+- [X] ​8. No need to create empty objects before adding in properties
 - [ ] ​9. ES6 method properties
 - [ ] ​10. For...of Loops
 - [ ] ​11. Iterator
