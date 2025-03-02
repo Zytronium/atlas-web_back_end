@@ -17,8 +17,8 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​2. A Course, Getters, and Setters
 - [X] ​3. Methods, static methods, computed methods names..... MONEY
 - [X] ​4. Pricing
-- [ ] ​5. A Building
-- [ ] ​6. Inheritance
+- [X] ​5. A Building
+- [X] ​6. Inheritance
 - [ ] ​7. Airport
 - [ ] ​8. Primitive - Holberton Class
 - [ ] ​9. Hoisting
