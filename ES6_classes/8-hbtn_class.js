@@ -1,6 +1,6 @@
 export default class HolbertonClass {
   constructor(size, location) {
-    // I'm not going to keep doing type validation unless it tells me do. I've gotten that down by now
+    // I'm not gonna keep doing type validation unless it tells me do. I've gotten that down by now
 
     // private attributes
     this._size = size;
