@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-console.log(task + task2);
 export default function taskBlock(trueOrFalse) {
+  /* eslint-disable no-unused-vars */
   var task = false;
   var task2 = true;
 
