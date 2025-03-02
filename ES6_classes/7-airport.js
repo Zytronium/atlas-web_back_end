@@ -14,6 +14,7 @@ export default class Airport {
     this._code = code;
   }
 
+  // Set the default string description of the class to display the airport's code
   get [Symbol.toStringTag]() {
     return this._code;
   }
