@@ -16,7 +16,7 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​1. Let's make some classrooms
 - [X] ​2. A Course, Getters, and Setters
 - [X] ​3. Methods, static methods, computed methods names..... MONEY
-- [ ] ​4. Pricing
+- [X] ​4. Pricing
 - [ ] ​5. A Building
 - [ ] ​6. Inheritance
 - [ ] ​7. Airport

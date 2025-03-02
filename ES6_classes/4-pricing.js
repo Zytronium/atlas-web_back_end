@@ -41,4 +41,9 @@ export default class Pricing {
     }
     this._currency = currency;
   }
+
+  // Displays the currency amount in the following format: Amount Name (Code)
+  displayFullPrice() {
+    return `${this._amount} ${this._currency.displayFullCurrency()}`;
+  }
 }
