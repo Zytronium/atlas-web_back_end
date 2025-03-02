@@ -15,7 +15,7 @@ repo focuses on JavaScript.
 
 - ## T3:
   - **[ES6 Basics](ES6_basic)**
-  - ***[ES6 classes](ES6_classes)***
+  - **[ES6 classes](ES6_classes)**
   - *[ES6 data manipulation]()*
   - *[ES6 Promises]()*
 
@@ -23,5 +23,5 @@ repo focuses on JavaScript.
 
 ---
 
-[Click here to go to the repo for **front end**](https://github.com/Zytronium/atlas-web_front_end)  
+[Click here to go to the repo for **Front End**](https://github.com/Zytronium/atlas-web_front_end)  
 [Click here to go to the main repo for **Full-Stack**](https://github.com/Zytronium/atlas-web-development)
