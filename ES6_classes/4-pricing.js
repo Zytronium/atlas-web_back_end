@@ -48,7 +48,7 @@ export default class Pricing {
   }
 
   // Converts a value from one currency to another using the given conversion rate
-  convertPrice(amount, conversionRate) {
+  static convertPrice(amount, conversionRate) {
     return amount * conversionRate;
   }
 }
