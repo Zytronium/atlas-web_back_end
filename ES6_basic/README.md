@@ -23,4 +23,4 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​9. ES6 method properties
 - [X] ​10. For...of Loops
 - [X] ​11. Iterator
-- [ ] ​12. Let's create a report object
+- [X] ​12. Let's create a report object

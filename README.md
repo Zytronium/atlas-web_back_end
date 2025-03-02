@@ -14,8 +14,8 @@ repo focuses on JavaScript.
 <summary>Projects</summary>
 
 - ## T3:
-  - ***[ES6 Basics](ES6_basic)***
-  - *[ES6 classes]()*
+  - **[ES6 Basics](ES6_basic)**
+  - ***[ES6 classes]()***
   - *[ES6 data manipulation]()*
   - *[ES6 Promises]()*
 
