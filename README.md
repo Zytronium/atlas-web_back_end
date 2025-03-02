@@ -24,4 +24,4 @@ repo focuses on JavaScript.
 ---
 
 [Click here to go to the repo for **front end**](https://github.com/Zytronium/atlas-web_front_end)  
-[Click here to go to the main repo for **Full-Stack](https://github.com/Zytronium/atlas-web-development)
+[Click here to go to the main repo for **Full-Stack**](https://github.com/Zytronium/atlas-web-development)

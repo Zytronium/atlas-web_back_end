@@ -11,8 +11,8 @@ in mid 2015. I'm not sure why this project is using a 9.5 year old version of JS
 [//]: # ("​" comes before every number because otherwise, the
 numbers will be formatted like "i, ii, iii, iv, etc." instead
 of "1, 2, 3, 4, etc.". "​" is a zero-width space)
-- [ ] ​0. Const or let?
-- [ ] ​1. Block Scope
+- [X] ​0. Const or let?
+- [X] ​1. Block Scope
 - [ ] ​2. Arrow functions
 - [ ] ​3. Parameter defaults
 - [ ] ​4. Rest parameter syntax for functions
