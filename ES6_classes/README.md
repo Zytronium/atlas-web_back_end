@@ -21,5 +21,5 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​6. Inheritance
 - [X] ​7. Airport
 - [X] ​8. Primitive - Holberton Class
-- [ ] ​9. Hoisting
+- [X] ​9. Hoisting
 - [ ] ​10. Vroom 🏎️

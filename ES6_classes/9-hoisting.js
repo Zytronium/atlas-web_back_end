@@ -32,7 +32,7 @@ export class StudentHolberton {
   }
 
   get fullStudentDescription() {
-    return `${self._firstName} ${self._lastName} - ${self._holbertonClass.year} - ${self._holbertonClass.location}`;
+    return `${this.fullName} - ${this.holbertonClass.year} - ${this.holbertonClass.location}`;
   }
 }
 
@@ -42,4 +42,5 @@ const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
 const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
 
-export const listOfStudents = [student1, student2, student3, student4, student5];
+const listOfStudents = [student1, student2, student3, student4, student5];
+export default listOfStudents;
