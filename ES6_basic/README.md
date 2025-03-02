@@ -13,7 +13,7 @@ numbers will be formatted like "i, ii, iii, iv, etc." instead
 of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​0. Const or let?
 - [X] ​1. Block Scope
-- [ ] ​2. Arrow functions
+- [X] ​2. Arrow functions
 - [ ] ​3. Parameter defaults
 - [ ] ​4. Rest parameter syntax for functions
 - [ ] ​5. The wonders of spread syntax
