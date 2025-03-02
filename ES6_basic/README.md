@@ -21,6 +21,6 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​7. Object property value shorthand syntax
 - [X] ​8. No need to create empty objects before adding in properties
 - [X] ​9. ES6 method properties
-- [ ] ​10. For...of Loops
+- [X] ​10. For...of Loops
 - [ ] ​11. Iterator
 - [ ] ​12. Let's create a report object
