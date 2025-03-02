@@ -14,7 +14,7 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​0. Const or let?
 - [X] ​1. Block Scope
 - [X] ​2. Arrow functions
-- [ ] ​3. Parameter defaults
+- [X] ​3. Parameter defaults
 - [ ] ​4. Rest parameter syntax for functions
 - [ ] ​5. The wonders of spread syntax
 - [ ] ​6. Take advantage of template literals
