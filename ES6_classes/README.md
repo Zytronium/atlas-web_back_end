@@ -22,4 +22,4 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​7. Airport
 - [X] ​8. Primitive - Holberton Class
 - [X] ​9. Hoisting
-- [ ] ​10. Vroom 🏎️
+- [X] ​10. Vroom 🏎️
