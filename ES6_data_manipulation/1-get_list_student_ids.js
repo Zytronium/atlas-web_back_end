@@ -5,5 +5,5 @@ export default function getListStudentIds(objects) {
   }
 
   // return an array of all ids of matching students in the given array of objects
-  return objects.map(student => student.id);
+  return objects.map((student) => student.id);
 }
