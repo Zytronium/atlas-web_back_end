@@ -12,7 +12,7 @@ WIP Readme
 numbers will be formatted like "i, ii, iii, iv, etc." instead
 of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​0. Basic list of objects
-- [ ] ​1. More mapping
+- [X] ​1. More mapping
 - [ ] ​2. Filter
 - [ ] ​3. Reduce
 - [ ] ​4. Combine
