@@ -1,7 +1,7 @@
 # Atlas Web Back End
 
 This is the primary repository for T3 Full-Stack Web Development projects
-for back end projects.
+for back end projects, and potentially other future projects in T4 and T5.
 
 Back end web development is development of a website's functionality. It
 includes things like scripts and the web server. To my knowledge, the most
