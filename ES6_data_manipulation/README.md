@@ -15,7 +15,7 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​1. More mapping
 - [X] ​2. Filter
 - [X] ​3. Reduce
-- [ ] ​4. Combine
+- [X] ​4. Combine
 - [ ] ​5. Typed Arrays
 - [ ] ​6. Set data structure
 - [ ] ​7. More set data structure
