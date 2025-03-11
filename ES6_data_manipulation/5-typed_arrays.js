@@ -1,7 +1,15 @@
 export default function createInt8TypedArray(length, position, value) {
-  return ArrayBuffer(length); // I don't understand this one at all. Skipping it for now
+  const buffer = new ArrayBuffer(length);
+  const int8DataView = new DataView(buffer);
 
-  // skipity toy let
+  // check if adding the value is not possible due to invalid position
+  if (position < 0 || position >= length) {
+    throw new Error("Position outside range");
+  }
+
+  // set the Int8 value at the specified position
+  int8DataView.setInt8(position, value);
+  return int8DataView;
 }
 
 /*
