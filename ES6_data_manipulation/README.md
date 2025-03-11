@@ -2,8 +2,9 @@
 
 ---
 
-[//]: # ("TODO")
-WIP Readme
+This project is about data manipulation. It covers using dfferent data structures
+like sets and maps, and how to manipulate their data. It also covers certain methods
+commonly used to manipulate data, like filtering with filter().
 
 ---
 
@@ -22,5 +23,3 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​8. Clean set
 - [X] ​9. Map data structure
 - [X] ​10. More map data structure
-
-- [ ] Readme
