@@ -4,7 +4,7 @@ export default function createInt8TypedArray(length, position, value) {
 
   // check if adding the value is not possible due to invalid position
   if (position < 0 || position >= length) {
-    throw new Error("Position outside range");
+    throw new Error('Position outside range');
   }
 
   // set the Int8 value at the specified position
