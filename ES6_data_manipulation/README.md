@@ -21,6 +21,6 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​7. More set data structure
 - [X] ​8. Clean set
 - [X] ​9. Map data structure
-- [ ] ​10. More map data structure
+- [X] ​10. More map data structure
 
 - [ ] Readme
