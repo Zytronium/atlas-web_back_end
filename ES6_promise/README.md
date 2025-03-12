@@ -12,8 +12,8 @@ resolve or reject a request. They can be useful for asynchronous events. A promi
 [//]: # ("​" comes before every number because otherwise, the
 numbers will be formatted like "i, ii, iii, iv, etc." instead
 of "1, 2, 3, 4, etc.". "​" is a zero-width space)
-- [ ] ​0. Keep every promise you make and only make promises you can keep
-- [ ] ​1. Don't make a promise...if you know you can't keep it
+- [X] ​0. Keep every promise you make and only make promises you can keep
+- [X] ​1. Don't make a promise...if you know you can't keep it
 - [ ] ​2. Catch me if you can!
 - [ ] ​3. Handle multiple successful promises
 - [ ] ​4. Simple promise
