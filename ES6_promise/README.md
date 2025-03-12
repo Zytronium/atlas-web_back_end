@@ -2,8 +2,9 @@
 
 ---
 
-[//]: # (todo)
-WIP Readme
+This project is all about JavaScript promises. A promise is something that will
+resolve or reject a request. They can be useful for asynchronous events. A promise
+
 
 ---
 
