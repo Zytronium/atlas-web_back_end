@@ -19,7 +19,7 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​4. Simple promise
 - [X] ​5. Reject the promises
 - [X] ​6. Handle multiple promises
-- [ ] ​7. Load balancer
+- [X] ​7. Load balancer
 - [ ] ​8. Throw an error
 - [ ] ​9. Throw error / try catch
 - [ ] Readme
