@@ -8,7 +8,7 @@ resolve or reject a request. They can be useful for asynchronous events. A promi
 
 ---
 
-### Tasks checklist:
+### ✅ Tasks checklist:
 [//]: # ("​" comes before every number because otherwise, the
 numbers will be formatted like "i, ii, iii, iv, etc." instead
 of "1, 2, 3, 4, etc.". "​" is a zero-width space)
@@ -20,6 +20,6 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​5. Reject the promises
 - [X] ​6. Handle multiple promises
 - [X] ​7. Load balancer
-- [ ] ​8. Throw an error
+- [X] ​8. Throw an error
 - [ ] ​9. Throw error / try catch
-- [ ] Readme
+- [X] Readme
