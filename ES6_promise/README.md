@@ -3,8 +3,11 @@
 ---
 
 This project is all about JavaScript promises. A promise is something that will
-resolve or reject a request. They can be useful for asynchronous events. A promise
+resolve or reject a request. They can be useful for asynchronous events. A promise-
+I forgot what I was going to put here. I guess I got distracted mid-sentence.
 
+Promises can return different values based on whether they resolved or rejected.
+They can also call and/or return other promises.
 
 ---
 
@@ -21,5 +24,4 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​6. Handle multiple promises
 - [X] ​7. Load balancer
 - [X] ​8. Throw an error
-- [ ] ​9. Throw error / try catch
-- [X] Readme
+- [X] ​9. Throw error / try catch
