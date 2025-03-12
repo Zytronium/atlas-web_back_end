@@ -16,7 +16,7 @@ of "1, 2, 3, 4, etc.". "​" is a zero-width space)
 - [X] ​1. Don't make a promise...if you know you can't keep it
 - [X] ​2. Catch me if you can!
 - [X] ​3. Handle multiple successful promises
-- [ ] ​4. Simple promise
+- [X] ​4. Simple promise
 - [ ] ​5. Reject the promises
 - [ ] ​6. Handle multiple promises
 - [ ] ​7. Load balancer
