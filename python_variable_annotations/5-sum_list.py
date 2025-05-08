@@ -2,9 +2,10 @@
 """
 function for task 5
 """
+import typing
 
 
-def sum_list(input_list: list) -> float:
+def sum_list(input_list: typing.List[float]) -> float:
     """
     Takes a list of floats as argument and returns their sum as a float.
     :param input_list: list of floats
