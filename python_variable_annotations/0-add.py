@@ -8,4 +8,5 @@ def add(a: float, b: float) -> float:
     :param b: number to add to a
     :return: sum of a and b
     """
+    # returns a + b
     return a + b
