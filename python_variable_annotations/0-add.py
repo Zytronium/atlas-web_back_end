@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 # adds a and b and returns the sum.
+"""
+documentation for add function is below.
+"""
 def add(a: float, b: float) -> float:
     """
     adds a and b and returns the sum.
