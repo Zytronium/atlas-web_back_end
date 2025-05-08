@@ -4,7 +4,6 @@ Variables required for task 3
 """
 
 
-
 a: int = 1  # How offensively simple. Just 1?
 #             That's not inclusive at all! How about several billion?
 
