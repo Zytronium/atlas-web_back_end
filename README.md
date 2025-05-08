@@ -19,6 +19,8 @@ repo focuses on JavaScript.
   - **[ES6 data manipulation](ES6_data_manipulation)**
   - **[ES6 Promises](ES6_promise)**
 
+- ## T4:
+  - ***[Python - Variable Annotations](python_variable_annotations)***
 </details>
 
 ---
