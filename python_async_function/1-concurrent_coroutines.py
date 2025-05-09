@@ -15,7 +15,6 @@ async def wait_n(n: int, max_delay: int) -> typing.List[float]:
     """
     delays: typing.List[float] = []
     for i in range(n):
-        # Divide by 5 to speed up testing process, multiply result to revert
-        delays.append(await wait_random(max_delay / 5) * 5)
+        delays.append(await wait_random(max_delay))
 
     return sorted(delays)
