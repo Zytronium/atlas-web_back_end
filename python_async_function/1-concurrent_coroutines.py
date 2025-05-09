@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+wait_random = __import__('0-basic_async_syntax').wait_random
+import typing
 """
 file for task 1
 """
-wait_random = __import__('0-basic_async_syntax').wait_random
-import typing
 
 
 async def wait_n(n: int, max_delay: int) -> typing.List[float]:
