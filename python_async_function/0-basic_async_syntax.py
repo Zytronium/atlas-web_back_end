@@ -3,7 +3,7 @@
 file for task 0
 """
 import random
-from asyncio import sleep
+import asyncio
 
 
 async def wait_random(max_delay: int = 10) -> float:
@@ -14,5 +14,5 @@ async def wait_random(max_delay: int = 10) -> float:
     :return: the randomly picked delay
     """
     delay: float = random.random() * max_delay
-    await sleep(delay)
+    await asyncio.sleep(delay)
     return delay
