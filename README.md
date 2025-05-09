@@ -1,12 +1,10 @@
 # Atlas Web Back End
 
-This is the primary repository for T3 Full-Stack Web Development projects
-for back end projects, and potentially other future projects in T4 and T5.
+This is the primary repository for Full-Stack Web Development beck-end projects.
 
-Back end web development is development of a website's functionality. It
-includes things like scripts and the web server. To my knowledge, the most
-common languages used for back end scripts are JavaScript and TypeScript. This
-repo focuses on JavaScript.
+Back end web development is development of a website's functionality. It includes
+things like scripts and the web server. To my knowledge, the most common languages
+used for back end scripts are JavaScript, TypeScript, and Python.
 
 ---
 
@@ -20,7 +18,9 @@ repo focuses on JavaScript.
   - **[ES6 Promises](ES6_promise)**
 
 - ## T4:
-  - ***[Python - Variable Annotations](python_variable_annotations)***
+  - **[Python - Variable Annotations](python_variable_annotations)**
+  - ***[Python - Async](python_async_function)***
+
 </details>
 
 ---
