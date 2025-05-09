@@ -15,7 +15,6 @@ def measure_time(n: int, max_delay: int) -> float:
     :return: average time for each time wait_random runs
     """
     async def helper():
-
         start: float = time.time()
         await wait_n(n, max_delay)
         total_time: float = time.time() - start
