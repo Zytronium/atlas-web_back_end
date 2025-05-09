@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
 wait_random = __import__('0-basic_async_syntax').wait_random
 import typing
+#!/usr/bin/env python3
 """
 file for task 1
 """
