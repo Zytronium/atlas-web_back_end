@@ -5,7 +5,6 @@ file for task 0
 import asyncio
 import random
 import typing
-from _typeshed import NoneType
 
 
 async def async_generator() -> typing.Generator[float, NoneType, NoneType]:
