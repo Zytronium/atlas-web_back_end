@@ -4,9 +4,11 @@ file for task 0
 """
 import asyncio
 import random
+import typing
+from types import NoneType
 
 
-async def async_generator():
+async def async_generator() -> typing.Generator[float, NoneType, NoneType]:
     """
     Generator that waits 1 second before yielding a random
     float between 0 and 10, 10 times
