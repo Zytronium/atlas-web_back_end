@@ -13,6 +13,6 @@ async def measure_runtime() -> float:
     :return: The total runtime.
     """
     start = time.time()
-    await asyncio.gather(
-        *[asyncio.create_task(async_comprehension()) for _ in range(4)])
-    return time.time() - start  # should be about 10 seconds
+    await asyncio.gather(*[asyncio.create_task(
+        async_comprehension()) for _ in range(4)])
+    return time.time() - start # should be about 10 seconds
