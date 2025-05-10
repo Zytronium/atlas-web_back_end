@@ -20,7 +20,7 @@ used for back end scripts are JavaScript, TypeScript, and Python.
 - ## T4:
   - **[Python - Variable Annotations](python_variable_annotations)**
   - **[Python - Async](python_async_function)**
-  - *[Python - Async Comprehension](python_async_comprehension)*
+  - ***[Python - Async Comprehension](python_async_comprehension)***
 
 </details>
 
