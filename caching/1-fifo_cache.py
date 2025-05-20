@@ -19,7 +19,7 @@ class FIFOCache(BaseCaching):
 
     def put(self, key, item):
         """
-        Adds an item in the cache with a key
+        Adds an item in the cache with a key using FIFO replacement
         """
         if key is None or item is None:
             return
