@@ -17,7 +17,6 @@ class FIFOCache(BaseCaching):
         super().__init__()
         self.order = []
 
-
     def put(self, key, item):
         """
         Adds an item in the cache with a key
