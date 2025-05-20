@@ -22,10 +22,11 @@ class FIFOCache(BaseCaching):
         """
         Adds an item in the cache with a key
         """
-        if key is None and item is None:
+        if key is None or item is None:
             return
 
-        if key not in self.cache_data and len(self.cache_data) >= BaseCaching.MAX_ITEMS:
+        if (key not in self.cache_data
+                and len(self.cache_data) >= BaseCaching.MAX_ITEMS):
             oldest_key = self.order.pop(0)
             del self.cache_data[oldest_key]
             print(f"DISCARD: {oldest_key}")
