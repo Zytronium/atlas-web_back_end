@@ -4,6 +4,7 @@
 
 from base_caching import BaseCaching
 
+
 class BasicCache(BaseCaching):
     """
     Caching system that doesn't limit items
