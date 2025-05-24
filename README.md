@@ -21,7 +21,8 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Python - Variable Annotations](python_variable_annotations)**
   - **[Python - Async](python_async_function)**
   - **[Python - Async Comprehension](python_async_comprehension)**
-  - ***[Caching](caching)***
+  - **[Caching](caching)**
+  - ***[Pagination](pagination)***
 
 </details>
 
