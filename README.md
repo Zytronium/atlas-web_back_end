@@ -22,7 +22,7 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Python - Async](python_async_function)**
   - **[Python - Async Comprehension](python_async_comprehension)**
   - **[Caching](caching)**
-  - ***[Pagination](pagination)***
+  - **[Pagination](pagination)**
 
 </details>
 
