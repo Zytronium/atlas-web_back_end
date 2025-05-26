@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Auth class
+Auth class file
 """
 
 from typing import List, TypeVar
@@ -17,7 +17,6 @@ class Auth:
         time of writing this
         :param path: path for something I guess
         :param excluded_paths: paths to exclude I guess
-        :return:
         """
         return False  # Todo, I guess
 
@@ -25,7 +24,6 @@ class Auth:
         """
         I honestly don't know what this will be used for
         :param request: the Flask request object
-        :return:
         """
         return None  # Todo, I guess
 
@@ -33,6 +31,5 @@ class Auth:
         """
         I honestly don't know what this will be used for
         :param request: the Flask request object
-        :return:
         """
         return None  # Todo, I guess
