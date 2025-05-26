@@ -23,8 +23,8 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Python - Async Comprehension](python_async_comprehension)**
   - **[Caching](caching)**
   - **[Pagination](pagination)**
-  - ***[Personal data](personal_data)***
-  - *[Basic authentication]()*
+  - **[Personal data](personal_data)**
+  - ***[Basic authentication](Basic_authentication)***
   - *[Session authentication]()*
   - *[User authentication service]()*
 
