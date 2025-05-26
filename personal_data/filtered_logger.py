@@ -5,12 +5,6 @@ Filtered logger
 import re
 from typing import List
 import logging
-import datetime
-
-
-FORMAT = "[HOLBERTON] %(name)s %(levelname)s %(asctime)-15s: %(message)s"
-REDACTION = "***"
-SEPARATOR = ";"
 
 
 class RedactingFormatter(logging.Formatter):
@@ -32,10 +26,10 @@ class RedactingFormatter(logging.Formatter):
         :param record: Log message to filter
         :return: Filtered log message
         """
-        return (FORMAT.replace("%(name)s", "my_logger")
-                .replace("%(levelname)s", "INFO")
-                .replace("%(asctime)-15s", "2025-05-26 15:07:58,105")
-                .replace("%(message)s", filter_datum(self.fields, REDACTION, record.getMessage(), SEPARATOR)))
+        record.msg = filter_datum(self.fields, self.REDACTION,
+                                  record.getMessage(), self.SEPARATOR)
+
+        return super().format(record)
 
 
 def filter_datum(fields: List[str], redaction: str, message: str,
