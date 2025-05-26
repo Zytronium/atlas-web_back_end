@@ -86,6 +86,9 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
 
 
 def main():
+    """
+    Main function
+    """
     db_connection = get_db()
     cursor = db_connection.cursor(dictionary=True)
     cursor.execute("SELECT * FROM users")
@@ -97,6 +100,7 @@ def main():
 
     cursor.close()
     db_connection.close()
+
 
 if __name__ == "__main__":
     main()
