@@ -21,7 +21,6 @@ class Auth:
         """
         return False  # Todo, I guess
 
-
     def authorization_header(self, request=None) -> str:
         """
         I honestly don't know what this will be used for
@@ -29,7 +28,6 @@ class Auth:
         :return:
         """
         return None  # Todo, I guess
-
 
     def current_user(self, request=None) -> TypeVar('User'):
         """
