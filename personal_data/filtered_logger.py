@@ -49,6 +49,7 @@ def filter_datum(fields: List[str], redaction: str, message: str,
                   lambda m: f"{m.group(1)}={redaction}{separator}",
                   message)
 
+
 def get_logger() -> logging.Logger:
     """
     Creates and configures a logger for user data
