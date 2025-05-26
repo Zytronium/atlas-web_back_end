@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from re import sub
+import re
 
 
 def filter_datum(fields: list[str], redaction: str, message: str,
@@ -12,6 +12,6 @@ def filter_datum(fields: list[str], redaction: str, message: str,
     :param separator: Which character is separating all fields in the log line
     :return: Obfuscated log message
     """
-    return sub(rf'({"|".join(fields)})=.*?{separator}',
+    return re.sub(rf'({"|".join(fields)})=.*?{separator}',
                lambda m: f"{m.group(1)}={redaction}{separator}",
                message)
