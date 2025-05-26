@@ -92,7 +92,7 @@ def main():
     logger = get_logger()
 
     for row in cursor:
-        msg = "; ".join([f"{key}={value}" for key, value in row]) + ";"
+        msg = "; ".join([f"{key}={value}" for key, value in row.items()]) + ";"
         logger.info(msg)
 
     cursor.close()
