@@ -2,11 +2,12 @@
 """
 Filtered logger
 """
+
 import re
 from typing import List
 import logging
 
-PII_FIELDS = ("name", "email", "ssn", "password", "ip")
+PII_FIELDS = ("name", "email", "ssn", "password", "phone")
 
 
 class RedactingFormatter(logging.Formatter):
