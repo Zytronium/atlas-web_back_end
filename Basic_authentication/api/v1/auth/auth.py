@@ -8,6 +8,9 @@ from flask import request
 
 
 class Auth:
+    """
+    Auth class
+    """
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """
         I honestly don't know what this will be used for at the
