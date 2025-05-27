@@ -22,7 +22,7 @@ def session_login():
     if not password:
         return jsonify({"error": "password missing"}), 400
 
-    users = User.sesrch({'email': email})
+    users = User.search({'email': email})
     if not users or len(users) == 0:
         return jsonify({ "error": "no user found for this email" }), 404
 
