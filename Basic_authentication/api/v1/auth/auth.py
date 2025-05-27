@@ -11,14 +11,17 @@ class Auth:
     """
     Auth class
     """
+
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """
-        I honestly don't know what this will be used for at the
-        time of writing this
+        I honestly don't know what this is for; I just followed instructions
+        to make it
         :param path: path for something I guess
         :param excluded_paths: paths to exclude I guess
+        :return: False if path is in excluded_paths, else, True
         """
-        return False  # Todo, I guess
+        if path is None or excluded_paths is None or len(excluded_paths) == 0 or path not in excluded_paths: return True
+        else: return False
 
     def authorization_header(self, request=None) -> str:
         """
