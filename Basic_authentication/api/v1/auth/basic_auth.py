@@ -3,8 +3,9 @@
 Basic Auth class
 """
 import base64
-
+from typing import TypeVar
 from api.v1.auth.auth import Auth
+from models.user import User
 
 
 class BasicAuth(Auth):
@@ -62,3 +63,26 @@ class BasicAuth(Auth):
                              str  # I hate the 80-char hard limit we're given
                              or ':' not in decoded_base64_authorization_header)
             else decoded_base64_authorization_header.split(':', 1))
+
+    def user_object_from_credentials(self, user_email: str,
+                                     user_pwd: str) -> TypeVar('User'):
+        """
+        Returns the User instance based on the user's email and password
+        :param user_email: The user's email
+        :param user_pwd: The user's password
+        :return: User instance if creds are valid, else None
+        """
+        try:
+            users = User.search({'email': user_email})
+        except Exception:
+            users = None
+
+        return (None if (user_email is None
+                         or type(user_email) is not str
+                         or user_pwd is None
+                         or type(user_pwd) is not str
+                         or not users  # ToDo
+                         or  not any(user.is_valid_password(user_pwd)
+                                for user in users))
+                else next(user for user in users
+                          if user.is_valid_password(user_pwd)))
