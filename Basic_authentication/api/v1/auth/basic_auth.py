@@ -81,8 +81,8 @@ class BasicAuth(Auth):
                          or type(user_email) is not str
                          or user_pwd is None
                          or type(user_pwd) is not str
-                         or not users  # ToDo
-                         or  not any(user.is_valid_password(user_pwd)
-                                for user in users))
+                         or not users
+                         or not any(user.is_valid_password(user_pwd)
+                                    for user in users))
                 else next(user for user in users
                           if user.is_valid_password(user_pwd)))
