@@ -3,6 +3,7 @@
 Route module for the API
 """
 from os import getenv
+
 from flask import Flask, jsonify, abort, request
 from flask_cors import (CORS, cross_origin)
 try:
@@ -57,7 +58,8 @@ def before_request_auth():
     """
     Filter each request before it's handled
     """
-    excl = ['/api/v1/status/', '/api/v1/unauthorized/', '/api/v1/forbidden/']
+    excl = ['/api/v1/status/', '/api/v1/unauthorized/', '/api/v1/forbidden/',
+            '/api/v1/auth_session/login/']
     if auth is None or not auth.require_auth(request.path, excl):
         return
 
@@ -66,6 +68,10 @@ def before_request_auth():
 
     if auth.current_user(request) is None:
         abort(403)
+
+    if (auth.authorization_header(request) is None
+        and auth.session_cookie(request) is None):
+        abort(401)
 
     request.current_user = auth.current_user(request)
 
