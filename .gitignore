@@ -3,3 +3,4 @@
 /*/main-gitignore.*
 /*/.env
 /Basic_authentication/.db_User.json
+/Session_authentication/.db_User.json

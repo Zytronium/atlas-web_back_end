@@ -24,8 +24,8 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Caching](caching)**
   - **[Pagination](pagination)**
   - **[Personal data](personal_data)**
-  - ***[Basic authentication](Basic_authentication)***
-  - *[Session authentication]()*
+  - **[Basic authentication](Basic_authentication)**
+  - ***[Session authentication](Sesson_authentication)***
   - *[User authentication service]()*
 
 </details>
