@@ -2,3 +2,4 @@
 /*/node_modules/
 /*/main-gitignore.*
 /*/.env
+/Basic_authentication/.db_User.json

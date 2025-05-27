@@ -12,6 +12,7 @@ class BasicAuth(Auth):
     """
     Basic Auth class
     """
+
     def __init__(self):
         pass
 
@@ -41,13 +42,13 @@ class BasicAuth(Auth):
         decoded_bytes = None
         try:
             decoded_bytes = base64.b64decode(base64_authorization_header,
-                                             validate=True)
+                                             validate=True).decode('utf-8')
         except (base64.binascii.Error, UnicodeDecodeError, TypeError):
             b64authead_is_valid = False
         return (None if (base64_authorization_header is None
                          or type(base64_authorization_header) is not str
                          or not b64authead_is_valid)
-                else decoded_bytes.decode('utf-8'))
+                else decoded_bytes)
 
     def extract_user_credentials(self,
                                  decoded_base64_authorization_header: str) -> (
@@ -86,3 +87,22 @@ class BasicAuth(Auth):
                                     for user in users))
                 else next(user for user in users
                           if user.is_valid_password(user_pwd)))
+
+    def current_user(self, request=None) -> TypeVar('User'):
+        """
+        Retrieves the User instance for a request using Basic Authentication
+        :param request: The Flask request object
+        :return: User instance if creds are valid, else None
+        """
+        if request is None:
+            return None
+
+        return self.user_object_from_credentials(
+            *self.extract_user_credentials(
+                self.decode_base64_authorization_header(
+                    self.extract_base64_authorization_header(
+                        self.authorization_header(request)
+                    )
+                )
+            )
+        )
