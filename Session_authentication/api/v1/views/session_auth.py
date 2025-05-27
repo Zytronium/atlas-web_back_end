@@ -12,7 +12,6 @@ import os
 def session_login():
     """
     Session login view
-    :return:
     """
     email = request.form.get('email')
     password = request.form.get('password')
