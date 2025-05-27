@@ -24,6 +24,11 @@ class BasicAuth(Auth):
         :return: The Base64 part of the Authorization header
         """
         return (None if (authorization_header is None
-                        or type(authorization_header) is not str
-                        or not authorization_header.startswith('Basic '))
+                         or type(authorization_header) is not str
+                          or not authorization_header.startswith('Basic '))
                 else authorization_header.replace('Basic ', ''))
+
+    def decode_base64_authorization_header(self,
+                                           base64_authorization_header: str
+                                           ) -> str:
+        pass
