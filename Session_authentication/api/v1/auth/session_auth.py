@@ -4,9 +4,9 @@ Session Auth class
 """
 
 import uuid
-from typing import Optional, Any
-
+from typing import Optional
 from api.v1.auth.auth import Auth
+from models.user import User
 
 
 class SessionAuth(Auth):
@@ -31,7 +31,7 @@ class SessionAuth(Auth):
         SessionAuth.user_id_by_session_id[session_id] = user_id
         return session_id
 
-    def user_id_for_session_id(self, session_id: str = None) -> Optional[Any]:
+    def user_id_for_session_id(self, session_id: str = None) -> Optional[str]:
         """
         Returns the User ID for the given Session ID
         :param session_id: The session ID to get the User ID for
@@ -41,3 +41,20 @@ class SessionAuth(Auth):
             return None
 
         return SessionAuth.user_id_by_session_id.get(session_id)
+
+    def current_user(self, request=None):
+        """
+        Retrieves the User instance for a request using Session Authentication
+        :param request: The Flask request object
+        :return: User instance if creds are valid, else None
+        """
+        if request is None:
+            return None
+
+        session_id = self.session_cookie(request)
+        user_id = self.user_id_for_session_id(session_id)
+
+        if user_id is None:
+            return None
+
+        return User.get(user_id)
