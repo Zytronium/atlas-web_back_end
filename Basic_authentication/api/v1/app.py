@@ -41,6 +41,9 @@ def not_found(error) -> str:
 
 @app.before_request
 def before_request_auth():
+    """
+    Filter each request before it's handled
+    """
     excluded = ['/api/v1/status/', '/api/v1/unauthorized/', '/api/v1/forbidden/']
     if auth is None or not auth.require_auth(request.path, excluded):
         return
