@@ -48,3 +48,14 @@ class Auth:
         :param request: the Flask request object
         """
         return None  # Todo, I guess
+
+    def session_cookie(self, request=None):
+        """
+        Returns a cookie value from a request
+        :param request: The request object
+        :return: A cookie value from the request
+        """
+        if request is None:
+            return None
+
+        return request.cookies.get(os.getenv("SESSION_NAME"), None)
