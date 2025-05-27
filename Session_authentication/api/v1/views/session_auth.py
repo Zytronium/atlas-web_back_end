@@ -42,7 +42,8 @@ def session_login():
     return response
 
 
-@app_views.route('/auth_session/logout', methods=['DELETE'], strict_slashes=False)
+@app_views.route('/auth_session/logout', methods=['DELETE'],
+                 strict_slashes=False)
 def session_logout():
     """
     Session logout view
