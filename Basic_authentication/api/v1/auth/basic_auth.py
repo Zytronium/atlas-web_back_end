@@ -32,8 +32,18 @@ class BasicAuth(Auth):
                                            base64_authorization_header: str
                                            ) -> str:
         """
-        Does something
-        :param base64_authorization_header: something
-        :return: something
+        Decodes a Base64-encoded Authorization header
+        :param base64_authorization_header: Te Base64 encoded header string
+        :return: THe decoded UTF-8 string, or None if invalid
         """
-        pass
+        b64authead_is_valid = True
+        decoded_bytes = None
+        try:
+            decoded_bytes = base64.b64decode(base64_authorization_header,
+                                             validate=True)
+        except:
+            b64authead_is_valid = False
+        return (None if (base64_authorization_header is None
+                         or type(base64_authorization_header) is not str
+                         or not b64authead_is_valid)
+                else decoded_bytes.decode('utf-8'))
