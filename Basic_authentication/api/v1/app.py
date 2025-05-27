@@ -18,6 +18,7 @@ auth = None
 if getenv("AUTH_TYPE") == "auth":
     auth = Auth()
 
+
 @app.errorhandler(401)
 def unauth(error) -> str:
     """ Unauthorized error handler
@@ -44,8 +45,8 @@ def before_request_auth():
     """
     Filter each request before it's handled
     """
-    excluded = ['/api/v1/status/', '/api/v1/unauthorized/', '/api/v1/forbidden/']
-    if auth is None or not auth.require_auth(request.path, excluded):
+    excl = ['/api/v1/status/', '/api/v1/unauthorized/', '/api/v1/forbidden/']
+    if auth is None or not auth.require_auth(request.path, excl):
         return
 
     if auth.authorization_header(request) is None:
@@ -53,7 +54,6 @@ def before_request_auth():
 
     if auth.current_user(request) is None:
         abort(403)
-
 
 
 if __name__ == "__main__":
