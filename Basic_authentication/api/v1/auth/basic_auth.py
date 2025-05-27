@@ -47,3 +47,18 @@ class BasicAuth(Auth):
                          or type(base64_authorization_header) is not str
                          or not b64authead_is_valid)
                 else decoded_bytes.decode('utf-8'))
+
+    def extract_user_credentials(self,
+                                 decoded_base64_authorization_header: str) -> (
+            str, str):
+        """
+        Extracts user email and password from the Base64 decoded string
+        :param decoded_base64_authorization_header: Decoded Bas64 string
+        :return: A tuple of user_email, user_password or None, None
+        """
+        return (
+            (None, None) if (decoded_base64_authorization_header is None or
+                             type(decoded_base64_authorization_header) is not
+                             str  # I hate the 80-char hard limit we're given
+                             or ':' not in decoded_base64_authorization_header)
+            else decoded_base64_authorization_header.split(':', 1))
