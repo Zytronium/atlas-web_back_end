@@ -41,7 +41,7 @@ class BasicAuth(Auth):
         try:
             decoded_bytes = base64.b64decode(base64_authorization_header,
                                              validate=True)
-        except:
+        except (base64.binascii.Error, UnicodeDecodeError, TypeError):
             b64authead_is_valid = False
         return (None if (base64_authorization_header is None
                          or type(base64_authorization_header) is not str
