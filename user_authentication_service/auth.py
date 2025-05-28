@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
 import uuid
+from typing import Optional
+
 import bcrypt
 from sqlalchemy.exc import NoResultFound
 from db import DB
 from user import User
+from user_authentication_service.user import User
 
 
 class Auth:
@@ -36,7 +39,7 @@ class Auth:
         except Exception:
             return False
 
-    def create_session(self, email: str) -> str:
+    def create_session(self, email: str) -> Optional[str]:
         """Creates a new session with the given email and returns
         the new session_id, or None if the user does not exist
         """
@@ -46,6 +49,16 @@ class Auth:
             user.session_id = new_session_id
             return new_session_id
         except NoResultFound:
+            return None
+
+    def get_user_from_session_id(self, session_id: str) -> Optional[User]:
+        """Gets a user from the given session_id
+        """
+        if session_id is None:
+            return None
+        try:
+            return self._db.find_user_by(session_id=session_id)
+        except Exception:
             return None
 
 
