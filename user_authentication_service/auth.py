@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-import uuid
 
+import uuid
 import bcrypt
 from sqlalchemy.exc import NoResultFound
-
 from db import DB
 from user import User
 
