@@ -22,9 +22,19 @@ class Auth:
             #  If above line doesn't raise NoResultFound, user already exists
             raise ValueError(f"User {email} already exists")
         except NoResultFound:
-            #  User doesn't already exist, procede with creating user
+            #  User doesn't already exist, proceed with creating user
             hashed_password = _hash_password(password)
             return self._db.add_user(email, hashed_password)
+
+    def valid_login(self, email, password) -> bool:
+        """Checks if the user login is valid
+        """
+        user = self._db.find_user_by(email=email)
+
+        if user and bcrypt.checkpw(password.encode("utf-8"), user.hashed_password):
+            return True
+
+        return False
 
 
 def _hash_password(password: str) -> bytes:
