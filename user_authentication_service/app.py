@@ -15,6 +15,7 @@ app = Flask(__name__)
 def root():
     return jsonify({"message": "Bienvenue"})
 
+
 @app.route("/users", methods=["POST"])
 def post_users():
     email = request.form.get("email")
