@@ -65,8 +65,8 @@ def profile():
     session_id = request.cookies.get("session_id")
 
     try:
-        AUTH._db.find_user_by(session_id=session_id)
-        return {"email": "<user email>"}, 200
+        user = AUTH._db.find_user_by(session_id=session_id)
+        return {"email": user.email}, 200
     except Exception:
         flask.abort(403)
         return None
