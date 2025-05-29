@@ -55,6 +55,7 @@ def login():
 
 @app.route("/sessions", methods=["DELETE"])
 def logout():
+    """DELETE /sessions"""
     session_id = request.cookies.get("session_id")
     try:
         user = AUTH._db.find_user_by(session_id=session_id)
@@ -67,6 +68,7 @@ def logout():
 
 @app.route("/profile", methods=["GET"])
 def profile():
+    """GET /profile"""
     session_id = request.cookies.get("session_id")
 
     try:
@@ -79,6 +81,7 @@ def profile():
 
 @app.route("/reset_password", methods=["POST"])
 def get_reset_password_token():
+    """POST /reset_password"""
     email = request.form.get("email")
     try:
         user = AUTH._db.find_user_by(email=email)
@@ -91,6 +94,7 @@ def get_reset_password_token():
 
 @app.route("/reset_password", methods=["PUT"])
 def update_password():
+    """PUT /reset_password"""
     email = request.form.get("email")
     reset_token = request.form.get("reset_token")
     new_password = request.form.get("new_password")
