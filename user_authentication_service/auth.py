@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+"""auth.py"""
 
 import uuid
 from typing import Optional
-
 import bcrypt
 from sqlalchemy.exc import NoResultFound
 from db import DB
