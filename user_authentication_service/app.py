@@ -81,7 +81,7 @@ def get_reset_password_token():
         user = AUTH._db.find_user_by(email=email)
         token = user.reset_token
         return jsonify({"email": email, "reset_token": token}), 200
-    except NoResultFound:
+    except Exception:
         flask.abort(403)
         return None
 
