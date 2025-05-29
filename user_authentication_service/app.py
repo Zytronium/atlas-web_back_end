@@ -16,6 +16,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def root():
+    """GET /"""
     return jsonify({"message": "Bienvenue"})
 
 
@@ -93,7 +94,7 @@ def update_password():
     new_password = request.form.get("new_password")
     try:
         user = AUTH._db.find_user_by(email=email)
-        if reset_token == None or reset_token != user.reset_token:
+        if reset_token != user.reset_token:
             flask.abort(403)
             return None
         AUTH.update_password(reset_token, new_password)
