@@ -18,7 +18,7 @@ def root():
 
 
 @app.route("/users", methods=["POST"])
-def post_users():
+def users():
     email = request.form.get("email")
     password = request.form.get("password")
 
@@ -55,6 +55,18 @@ def logout():
         user = AUTH._db.find_user_by(session_id=session_id)
         AUTH.destroy_session(user.id)
         return redirect("/")
+    except Exception:
+        flask.abort(403)
+        return None
+
+
+@app.route("/profile", methods=["GET"])
+def profile():
+    session_id = request.cookies.get("session_id")
+
+    try:
+        AUTH._db.find_user_by(session_id=session_id)
+        return {"email": "<user email>"}, 200
     except Exception:
         flask.abort(403)
         return None
