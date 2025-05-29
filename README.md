@@ -26,7 +26,7 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Personal data](personal_data)**
   - **[Basic authentication](Basic_authentication)**
   - **[Session authentication](Session_authentication)**
-  - *[User authentication service](user_authentication_service)*
+  - **[User authentication service](user_authentication_service)**
 
 </details>
 
