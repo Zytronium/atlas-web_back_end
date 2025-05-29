@@ -22,6 +22,7 @@ def root():
 
 @app.route("/users", methods=["POST"])
 def users():
+    """POST /users"""
     email = request.form.get("email")
     password = request.form.get("password")
 
