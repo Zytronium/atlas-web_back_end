@@ -27,7 +27,8 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Basic authentication](Basic_authentication)**
   - **[Session authentication](Session_authentication)**
   - **[User authentication service](user_authentication_service)**
-  - ***[Python Unittest](Unittests_and_integration_tests)***
+  - **[Python Unittest](Unittests_and_integration_tests)**
+  - ***[Localization](https://github.com/Zytronium/atlas-localization) (external repo)***
 
 </details>
 
