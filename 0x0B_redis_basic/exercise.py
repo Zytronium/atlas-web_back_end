@@ -5,12 +5,12 @@ Exercise.py
 
 import uuid
 from typing import Union
-from redis import Redis
+import redis
 
 
 class Cache:
     def __init__(self):
-        self._redis = Redis()
+        self._redis = redis.Redis()
         self._redis.flushdb()
 
     def store(self, data: Union[str, bytes, int, float]) -> str:
