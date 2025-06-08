@@ -6,6 +6,26 @@ Exercise.py
 import uuid
 from typing import Union, Callable, Optional
 import redis
+from functools import wraps
+
+
+def count_calls(method: Callable) -> Callable:
+    """
+    Decorator that counts how many times a method is called
+    :param method: The method to decorate
+    """
+    @wraps(method)
+    def wrapper(self, *args, **kwargs):
+        """
+        Wrapper that counts how many times a method is called
+        :param self: The instance
+        :param args: Args
+        :param kwargs: KW args
+        """
+        key = method.__qualname__
+        self._redis.incr(key)
+        return method(self, *args, **kwargs)
+    return wrapper
 
 
 class Cache:
@@ -13,6 +33,7 @@ class Cache:
         self._redis = redis.Redis()
         self._redis.flushdb()
 
+    @count_calls
     def store(self, data: Union[str, bytes, int, float]) -> str:
         """
         Generates a random uuid key and stores the data in redis with that key
