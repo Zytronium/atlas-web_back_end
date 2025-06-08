@@ -4,7 +4,7 @@ Exercise.py
 """
 
 import uuid
-from typing import Union
+from typing import Union, Callable, Optional
 import redis
 
 
@@ -22,3 +22,37 @@ class Cache:
         key = str(uuid.uuid4())
         self._redis.set(key, data)
         return key
+
+    def get(self, key: str, fn: Optional[Callable] = None) -> Union[str, bytes, int, None]:
+        """
+        Retrieves data from the Redis database
+        :param key: The key associated with the data to retrieve
+        :param fn: Callback function to convert data back to desired format
+        :return: Data retrieved from the database
+        """
+        value = self._redis.get(key)
+
+        if value is None:
+            return None
+
+        return fn(value) if fn else value
+
+    def get_str(self, key: str) -> Optional[str]:
+        """
+        Retrieves data from the Redis database and automatically
+        parameterizes Cache.get with the correct conversion function
+        for strings.
+        :param key: The key associated with the data to retrieve
+        :return: Data retrieved from the database
+        """
+        return self.get(key, fn=lambda d: d.decode("UTF-8"))
+
+    def get_int(self, key: str) -> Optional[int]:
+        """
+        Retrieves data from the Redis database and automatically
+        parameterizes Cache.get with the correct conversion function
+        for integers.
+        :param key: The key associated with the data to retrieve
+        :return: Data retrieved from the database
+        """
+        return self.get(key, fn=int)
