@@ -7,8 +7,8 @@ Uses the requests module to obain HTML content of a page and returns it.
 import requests
 import redis
 
-
 db = redis.Redis()
+
 
 def get_page(url: str) -> str:
     """
@@ -16,7 +16,7 @@ def get_page(url: str) -> str:
     :param url: URL of the page to pull HTML content from
     :return: The HTML content of the given page
     """
-    db.incr(f"{url}:count")
+    db.incr(f"count:{url}")
 
     html = db.get(url)
     if html is None:
