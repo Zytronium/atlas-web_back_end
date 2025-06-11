@@ -44,8 +44,8 @@ def call_history(method: Callable) -> Callable:
         :param kwargs: KW args
         """
         key = method.__qualname__
-        input_key = f"{key}:input"
-        output_key = f"{key}:output"
+        input_key = f"{key}:inputs"
+        output_key = f"{key}:outputs"
         output = method(self, *args, **kwargs)
 
         self._redis.rpush(input_key, str(args))
