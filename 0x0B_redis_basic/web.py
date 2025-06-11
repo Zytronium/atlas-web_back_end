@@ -12,7 +12,7 @@ db = redis.Redis()
 
 def get_page(url: str) -> str:
     """
-    Gets the HTML content of a page from it's URL
+    Gets the HTML content of a page from its URL
     :param url: URL of the page to pull HTML content from
     :return: The HTML content of the given page
     """
