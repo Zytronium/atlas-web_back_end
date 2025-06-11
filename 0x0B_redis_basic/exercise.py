@@ -76,6 +76,9 @@ def replay(method: Callable):
 
 
 class Cache:
+    """
+    Cache class that caches data in a Redis DB.
+    """
     def __init__(self):
         self._redis = redis.Redis()
         self._redis.flushdb()
