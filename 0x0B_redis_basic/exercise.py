@@ -95,7 +95,8 @@ class Cache:
         self._redis.set(key, data)
         return key
 
-    def get(self, key: str, fn: Optional[Callable] = None) -> Union[str, bytes, int, None]:
+    def get(self, key: str, fn: Optional[Callable] = None) -> (
+            Union)[str, bytes, int, None]:
         """
         Retrieves data from the Redis database
         :param key: The key associated with the data to retrieve
