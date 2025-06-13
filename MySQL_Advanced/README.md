@@ -19,6 +19,7 @@ Project setup:
 echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
 curl "https://s3.eu-west-3.amazonaws.com/hbtn.intranet.project.files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
 echo "SELECT * FROM tv_genres" | mysql -uroot -p hbtn_0d_tvshows
+echo "CREATE DATABASE holberton;" | mysql -uroot -p
 ```
 Expected output after inputting password:
 ```
