@@ -30,7 +30,7 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Python Unittest](Unittests_and_integration_tests)**
   - **[Localization](https://github.com/Zytronium/atlas-localization) (external repo)**
   - **[Redis basic](0x0B_redis_basic)**
-  - ***[MySQL advanced](MySQL_Advanced)***
+  - **[MySQL advanced](MySQL_Advanced)**
 
 </details>
 
