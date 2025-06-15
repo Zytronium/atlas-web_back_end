@@ -31,6 +31,7 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Localization](https://github.com/Zytronium/atlas-localization) (external repo)**
   - **[Redis basic](0x0B_redis_basic)**
   - **[MySQL advanced](MySQL_Advanced)**
+  - ***[NoSQL](NoSQL)***
 
 </details>
 
