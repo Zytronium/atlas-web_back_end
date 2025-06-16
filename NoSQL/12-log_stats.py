@@ -20,9 +20,9 @@ if __name__ == "__main__":
 
     print(f"""{total_logs} logs
 Methods:
-    method GET: {method_get}
-    method POST: {method_post}
-    method PUT: {method_put}
-    method PATCH: {method_patch}
-    method DELETE: {method_delete}
+\tmethod GET: {method_get}
+\tmethod POST: {method_post}
+\tmethod PUT: {method_put}
+\tmethod PATCH: {method_patch}
+\tmethod DELETE: {method_delete}
 {status_check} status check""")
