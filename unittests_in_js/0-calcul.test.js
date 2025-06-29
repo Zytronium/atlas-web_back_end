@@ -15,6 +15,10 @@ describe('calculateNumber', function () {
         assert.strictEqual(calculateNumber(3.7, 1), 5);
     });
 
+    it('should return 6 for (2, 4.2)', function () {
+        assert.strictEqual(calculateNumber(2, 4.2), 6);
+    });
+
     it('should return 5 for (1.2, 3.7)', function () {
         assert.strictEqual(calculateNumber(1.2, 3.7), 5);
     });
