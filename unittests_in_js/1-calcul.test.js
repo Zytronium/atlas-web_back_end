@@ -58,4 +58,8 @@ describe('calculateNumber', function () {
     it('should return "Error" for ("DIVIDE", 1, -0.5)', function () {
         assert.strictEqual(calculateNumber("DIVIDE", 1, -0.5), "Error");
     });
+
+    it('should return "Error" for ("Invalid", 1, 5)', function () {
+        assert.strictEqual(calculateNumber("Invalid", 1, 5), "Error");
+    });
 });
