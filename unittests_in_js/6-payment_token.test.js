@@ -1,27 +1,24 @@
 #!/usr/bin/node
 const { expect } = require('chai');
-const sinon = require('sinon');
-const sendPaymentRequestToApi = require('./4-payment.js');
-const spy = sinon.spy(console, 'log');
+const getPaymentTokenFromAPI = require('./6-payment_token');
 
-describe('sendPaymentRequestToApi', function () {
-    beforeEach(function () {
-        spy.resetHistory();
+describe('getPaymentTokenFromAPI', () => {
+    it('should resolve with correct response when success is true', (done) => {
+        getPaymentTokenFromAPI(true)
+          .then((response) => {
+              expect(response).to.be.an('object');
+              expect(response).to.have.property('data', 'Successful response from the API');
+              done();
+          })
+          .catch((err) => done(err));
     });
-    afterEach(function () {
-        expect(spy.calledOnce).to.be.true;
-    });
 
-    it('should call Utils.calculateNumber with ("SUM", 100, 20)', function () {
-        sendPaymentRequestToApi(100, 20);
-
-        expect(spy.calledWithExactly("The total is: 120")).to.be.true;
-    });
-    it('should call Utils.calculateNumber with ("SUM", 10, 10)', function () {
-        sendPaymentRequestToApi(10, 10);
-
-        expect(spy.calledWithExactly("The total is: 20")).to.be.true;
-
-        spy.restore();
+    it('should return undefined when success is false', (done) => {
+        Promise.resolve(getPaymentTokenFromAPI(false))
+          .then((response) => {
+              expect(response).to.be.undefined;
+              done();
+          })
+          .catch(done);
     });
 });
