@@ -5,6 +5,13 @@ const sendPaymentRequestToApi = require('./4-payment.js');
 const spy = sinon.spy(console, 'log');
 
 describe('sendPaymentRequestToApi', function () {
+    beforeEach(function () {
+        spy.resetHistory();
+    });
+    after(function () {
+        spy.restore();
+    });
+
     it('should call Utils.calculateNumber with ("SUM", 100, 20)', function () {
         sendPaymentRequestToApi(100, 20);
 

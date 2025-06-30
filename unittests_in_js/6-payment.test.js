@@ -10,7 +10,7 @@ describe('sendPaymentRequestToApi', function () {
     });
     after(function () {
         spy.restore();
-    })
+    });
 
     it('should call Utils.calculateNumber with ("SUM", 100, 20)', function () {
         sendPaymentRequestToApi(100, 20);
@@ -19,9 +19,13 @@ describe('sendPaymentRequestToApi', function () {
         expect(spy.calledWithExactly("The total is: 120")).to.be.true;
     });
     it('should call Utils.calculateNumber with ("SUM", 10, 10)', function () {
+        spy.resetHistory();
+
         sendPaymentRequestToApi(10, 10);
 
         expect(spy.calledOnce).to.be.true;
         expect(spy.calledWithExactly("The total is: 20")).to.be.true;
+
+        spy.restore();
     });
 });
