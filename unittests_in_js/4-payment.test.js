@@ -15,7 +15,7 @@ describe('sendPaymentRequestToApi', function () {
         expect(stub.calledWithExactly('SUM', 100, 20)).to.be.true;
         expect(spy.calledWithExactly("The total is: 10")).to.be.true;
 
-        spy.restore()
+        spy.restore();
         stub.restore();
     });
 });
