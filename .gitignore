@@ -6,4 +6,4 @@
 /Session_authentication/.db_User.json
 /user_authentication_service/a.db
 /user_authentication_service/a.db-journal
-/unittests_in_js/8-api/node_modules/
+/*/*/node_modules/
