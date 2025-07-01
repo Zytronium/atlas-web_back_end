@@ -26,3 +26,43 @@ describe('Index page', () => {
     });
   });
 });
+
+describe('Cart page', () => {
+  const baseURL = 'http://localhost:7865/cart';
+
+  it('should return 200 and correct message for numeric ID', (done) => {
+    request.get(`${baseURL}/24`, (err, res, body) => {
+      expect(res.statusCode).to.equal(200);
+      expect(body).to.equal('Payment methods for cart 24');
+      done(err);
+    });
+  });
+
+  it('should return 404 for non-numeric ID', (done) => {
+    request.get(`${baseURL}/hello`, (err, res) => {
+      expect(res.statusCode).to.equal(404);
+      done(err);
+    });
+  });
+
+  it('should return 404 for cart ID 0', (done) => {
+    request.get(`${baseURL}/cart/0`, (err, res, body) => {
+      expect(res.statusCode).to.equal(404);
+      done(err);
+    });
+  });
+
+  it('should return 404 for cart ID -5', (done) => {
+    request.get(`${baseURL}/cart/-5`, (err, res, body) => {
+      expect(res.statusCode).to.equal(404);
+      done(err);
+    });
+  });
+
+  it('should return 404 for cart ID 3.14', (done) => {
+    request.get(`${baseURL}/cart/3.14`, (err, res, body) => {
+      expect(res.statusCode).to.equal(404);
+      done(err);
+    });
+  });
+});
