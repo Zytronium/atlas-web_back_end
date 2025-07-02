@@ -1,6 +1,9 @@
 # Queueing System in JS
 
-WIP readme
+This project is about using Kue to create job queues in JavaScript. A queueing
+system allows you to queue up jobs to be performed by the server. This project
+links a Redis server to a queuing system to simulate sending codes to phone numbers.
+It also displays progress for each job and includes a phone number blacklist.
 
 ----
 
@@ -14,15 +17,15 @@ WIP readme
 - [X] ​6. Create the Job creator (2/? pts)
 - [X] ​7. Create the Job processor (2/? pts)
 - [X] ​8. Track progress and errors with Kue: Create the Job creator (2/? pts)
-- [ ] ​9. Track progress and errors with Kue: Create the Job processor (0/? pts)
+- [X] ​9. Track progress and errors with Kue: Create the Job processor (2/? pts)
 - [ ] ​10. Writing the job creation function (0/? pts)
 
 Only tasks 0–10 are required.
 
 ###### Since everything except task 0 shows "0/ pts," I'll calculate progress as if tasks 0-1 are 1 point and everything else is 2 points, for a total of 20 pts.
 
-- [ ] Readme
-- [ ] **Everything Done ✓** (16/20 pts) - 80%
+- [X] Readme
+- [ ] **Everything Done ✓** (18/20 pts) - 90%
 
 >### Progress Goals:
 >Tuesday: 70-90% (task 7-9) ✓  
