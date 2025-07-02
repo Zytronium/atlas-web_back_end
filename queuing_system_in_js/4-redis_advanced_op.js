@@ -18,7 +18,7 @@ const values = {
   'Bogota': 20,
   'Cali': 40,
   'Paris': 2
-}
+};
 
 for (const key in values) {
   if (values.hasOwnProperty(key)) {
