@@ -5,9 +5,9 @@ WIP readme
 ----
 
 ### ✅ Tasks checklist:
-- [ ] ​0. Install a redis instance (0/1 pt)
-- [ ] ​1. Node Redis Client (0/? pts)
-- [ ] ​2. Node Redis client and basic operations (0/? pts)
+- [X] ​0. Install a redis instance (0/1 pt)
+- [X] ​1. Node Redis Client (1/? pt)
+- [X] ​2. Node Redis client and basic operations (2/? pts)
 - [ ] ​3. Node Redis client and async operations (0/? pts)
 - [ ] ​4. Node Redis client and advanced operations (0/? pts)
 - [ ] ​5. Node Redis client publisher and subscriber (0/? pts)
@@ -20,8 +20,9 @@ WIP readme
 Only tasks 0–10 are required.
 
 ###### Since everything except task 0 shows "0/ pts," I'll calculate progress as if tasks 0-1 are 1 point and everything else is 2 points, for a total of 20 pts.
+
 - [ ] Readme
-- [ ] **Everything Done ✓** (0/20 pts) - 0%
+- [ ] **Everything Done ✓** (4/20 pts) - 20%
 
 >### Progress Goals:
 ><strong>Tuesday: 70-90% (task 7-9)</strong>  

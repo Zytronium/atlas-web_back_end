@@ -7,3 +7,4 @@
 /user_authentication_service/a.db
 /user_authentication_service/a.db-journal
 /*/*/node_modules/
+/queuing_system_in_js/redis-6.0.10/
