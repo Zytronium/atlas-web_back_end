@@ -29,5 +29,5 @@ Only tasks 0–10 are required.
 
 >### Progress Goals:
 >Tuesday: 70-90% (task 7-9) ✓  
-<strong>Wednesday: 100% (task 10)</strong> ✓
+Wednesday: 100% (task 10) ✓
 ---

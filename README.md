@@ -35,6 +35,8 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Node Express](Node_JS)**
   - **[Unittests in JS](unittests_in_js)**
   - **[Queueing System in JS](queuing_system_in_js)**
+  - ***[GraphQL Backend](https://github.com/Zytronium/atlas-web_graphql) (external repo)***
+  - *[Files Manager Express](https://github.com/Zytronium/atlas-atlas-files_manager) (external repo)*
 </details>
 
 ---
@@ -46,7 +48,7 @@ used for back end scripts are JavaScript, TypeScript, and Python.
 
 ## Atlas Projects Navigation
 ###### Excluding single-project repos, here are all my main repos during my time at Atlas School. Click on the trimester to go to its primary repo.
-<small>Last Updated: `April 7th, 2025`</small>
+<small>Last Updated: `July 5th, 2025`</small>
 
 - **[T1](https://github.com/Zytronium/atlas-low_level_programming)**
   - [Atlas Zero Day](https://github.com/Zytronium/atlas-zero_day)
@@ -55,8 +57,8 @@ used for back end scripts are JavaScript, TypeScript, and Python.
 - **[T2](https://github.com/Zytronium/atlas-higher_level_programming)**
   - **[Atlas Higher Level Programming](https://github.com/Zytronium/atlas-higher_level_programming) <small>[T2 Primary]</small>**
   - [Hack Sprint](https://github.com/Zytronium/atlas-hack_sprint_adventure)
-- **[T3](https://github.com/Zytronium/atlas-web-development)**
+- **[T3-5](https://github.com/Zytronium/atlas-web-development)**
   - LAB Main Repo (dropped class; switched to Full Stack): [Atlas System Linux](https://github.com/Zytronium/atlas-system_linux)
-  - **Full Stack Main Repo: [Atlas Web Development](https://github.com/Zytronium/atlas-web-development) <small>[T3 Primary]</small>**
-  - Full Stack Front End Repo: [Atlas Web Front End](https://github.com/Zytronium/atlas-web_front_end)
-  - ### Full Stack Back End Repo: [Atlas Web Back End](https://github.com/Zytronium/atlas-web_back_end)
+  - **Full Stack Repo: [Atlas Web Development](https://github.com/Zytronium/atlas-web-development) <small>[Full Stack Primary]</small>**
+  - **Full Stack Front End Repo: [Atlas Web Front End](https://github.com/Zytronium/atlas-web_front_end) <small>[T3 Primary]</small>**
+  - ### **Full Stack Back End Repo: [Atlas Web Back End](https://github.com/Zytronium/atlas-web_back_end) <small>[T4 Primary]</small>**
