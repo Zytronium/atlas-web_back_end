@@ -35,8 +35,8 @@ used for back end scripts are JavaScript, TypeScript, and Python.
   - **[Node Express](Node_JS)**
   - **[Unittests in JS](unittests_in_js)**
   - **[Queueing System in JS](queuing_system_in_js)**
-  - ***[GraphQL Backend](https://github.com/Zytronium/atlas-web_graphql) (external repo)***
-  - *[Files Manager Express](https://github.com/Zytronium/atlas-atlas-files_manager) (external repo)*
+  - **[GraphQL Backend](https://github.com/Zytronium/atlas-web_graphql) (external repo)**
+  - ***[Files Manager Express](https://github.com/Zytronium/atlas-atlas-files_manager) (external repo)***
 </details>
 
 ---
